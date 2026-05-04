@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../foodorder/css/styles.css">
+    <link rel="stylesheet" href="../foodorder/css/loginstyles.css">
+</head>
+<body>
+    <div class="login flex justify-center align-center">
+        <a href="../index.html" class="pointer">
+            <div class="company-container flex big-gap align-center" aria-label="Edible company logo">
+                <img class="company-image" src="../foodorder/images/restaurant/edible-logo.png" alt="Edible company logo">
+                <strong class="text-largest capitalize">Edible</strong>
+            </div>
+        </a>
+        
+
+        <!-- Login Container -->
+        <section id="login-container" class="login-container flex justify-center align-center column big-gap radius basic-shadow">
+            <h1 class="text-large">REVIEW</h1>
+            <form action="../foodorder/scripts/review.php" class="login-form flex column gap align-center" method="post">
+                <div class="input-box">
+                    <input class="input-username" id="login-username" name="login-username" type="text" placeholder="Username">
+                </div>
+                <div class="input-box flex">
+                    <input class="input-textarea"  name="textarea" type="textarea" placeholder="REVIEW" rows="10" cols="20">
+                    <button type="button" class="reveal-login-password-button flex center" aria-label="Reveal log in password">
+                       
+                    </button>
+                </div>
+                
+
+                <button class="login-button flex justify-center align-center basic-shadow" type="submit">
+                    <strong>SUBMIT </strong>
+                </button>
+            </form>
+        </section>
+        </div>
+        </body>
+        </html>
