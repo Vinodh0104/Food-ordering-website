@@ -1,0 +1,55 @@
+.login {
+    height: 100vh;
+    background-color: var(--grayish-white);
+}
+
+.company-container {
+    position: fixed;
+    top: 3rem;
+    left: 80px;
+}
+
+/* Login Container */
+
+.login-container {
+    padding: 2rem 4rem;
+    background-color: white;
+}
+
+.login-form .input-box, .signup-form .input-box, .login-form, .signup-form  {
+    width: 100%;
+}
+
+
+.input-password {
+    width: 100%;
+}
+
+.reveal-login-password-button, .reveal-signup-password-button, .reveal-confirm-password-button {
+    margin-right: 1rem;
+}
+
+.login-button, .signup-button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--green);
+    color: white;
+}
+
+
+  
+.input-username, .input-password, .input-email {
+    width: 100%;
+    padding: 12px 1rem; 
+}
+
+.signup-page-button, .back-to-login-button{
+    color: var(--green);
+}
+
+.input-textarea{
+    height: 100px;
+    width: 90px;
+
+}
