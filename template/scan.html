@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Restaurant Order</title>
+    <link rel="stylesheet" href="scan.css">
+    
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+</head>
+<body>
+    <h1>Welcome to Quick Restaurant Order</h1>
+    <p>Scan the QR code below to place an order.</p>
+
+    <!-- QR Scanner Video -->
+    <video id="preview" width="300" height="200"></video>
+
+    <script type="text/javascript">
+        let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+        scanner.addListener('scan', function (content) {
+            window.location.href = content; // Redirect to the scanned URL
+        });
+        Instascan.Camera.getCameras().then(function (cameras) {
+            if (cameras.length > 0) {
+                scanner.start(cameras[0]);
+            } else {
+                console.error('No cameras found.');
+            }
+        }).catch(function (e) {
+            console.error(e);
+        });
+    </script>
+
+    <p>Or <a href= "index.html" Click here</a> to order manually.</p>
+</body>
+</html>
