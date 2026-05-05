@@ -136,34 +136,25 @@ Billing + Feedback System
 
 ---
 
-## Installation and Setup
+## Setup Instructions
 
- Step 1
-
-Install XAMPP on your system.
-
- Step 2
-
-Move the project folder to:
-
-``bash
+```bash
+# Move project folder to
 C:/xampp/htdocs/
 
- Step 3
- Start Apache and MySQL from XAMPP.
- 
- Step 4 - Open phpMyAdmin:
- '''bash
- http://localhost/phpmyadmin
- 
- Step 5 - Create database: 
- SQL - restaurant
+# Start Apache and MySQL from XAMPP
 
- Step 6 - Import:
- '''bash
- restaurant.sql
- 
- Step 7- Run project in browser:
+# Open phpMyAdmin
+http://localhost/phpmyadmin
+
+# Create MySQL database
+Database Name: restaurant
+
+# Import SQL file
+restaurant.sql
+
+# Run in Browser
+http://localhost/your-project-folder-name/ browser:
  '''bash
  http://localhost/your-project-folder-name/
 
